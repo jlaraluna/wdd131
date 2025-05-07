@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 300px 1fr auto;
+}
+
+header {
+    background: #F7D1CD;
+    padding: 2rem;
+    grid-column: 1 / 4;
+}
+
+.left-sidebar {
+    background: #E8C2CA;
+    grid-column: 1 / 2;
+}
+
+main {
+    background: #735D78;
+    grid-column: 2 / 3;
+}
+
+.right-sidebar {
+    background: #D1B3C4;
+    grid-column: 3 / 4;
+}
+
+footer {
+    background: #B392AC;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+.left-sidebar,
+.right-sidebar {
+  padding: 1rem;
+}
