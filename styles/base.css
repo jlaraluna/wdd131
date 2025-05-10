@@ -19,16 +19,16 @@ body {
     font-family: "Raleway", sans-serif;
     line-height: 27px;
     font-size: 16px;
-    display: flex;
-    justify-content: center;
+    display: block;
     height: 100%;
 }
 
 .grid {
     height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 .grid > * {
@@ -49,20 +49,19 @@ body {
 }
 
 .grid-header h1 {
-    border-bottom: 1px solid white;
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     letter-spacing: 1.5px;
 }
 
 .grid-navigation {
-    grid-column: 1 / -1;
-    background: var(--secondary-color);
+    /* grid-column: 1 / -1; */
+    /* background: var(--secondary-color); */
     display: flex;
     justify-content: center;
     gap: 2rem;
     align-items: center;
-    height: 50px;
+    /* height: 50px; */
     padding: 1rem 0;
 }
 
