@@ -55,13 +55,10 @@ body {
 }
 
 .grid-navigation {
-    /* grid-column: 1 / -1; */
-    /* background: var(--secondary-color); */
     display: flex;
     justify-content: center;
     gap: 2rem;
     align-items: center;
-    /* height: 50px; */
     padding: 1rem 0;
 }
 
