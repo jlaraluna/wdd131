@@ -2,72 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Dynamic Web Fundamentals - Joel Lara Luna</title>
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Joel Lara Luna | About">
-    <meta name="author" content="Joel Lara Luna">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals - Joel Lara Luna</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Joel Lara Luna | About">
+  <meta name="author" content="Joel Lara Luna">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <header>
-      <h1><b>WDD 131</b> | Dynamic Web Fundamentals</h1>
-      <h2><i>Joel Lara Luna</i></h2>
+  <!-- GRID -->
+  <div class="grid">
+    <!-- HEADER SECTION -->
+    <header class="grid-header">
+      <h1><b>WDD 131</b> | Dynamic Web Fundamentals | <i>Joel Lara Luna</i></h1>
     </header>
-  
-    <nav>
-      <ul class="navigation">
-        <li><a href="https://www.linkedin.com/in/joel-lara-luna" target="_blank">LinkedIn</a></li>
-        <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/7?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
-        <li><a href="#" target="_blank">Final Project</a></li>
-      </ul>
+    <!-- NAV SECTION -->
+    <nav class="grid-navigation">
+      <a href="https://www.linkedin.com/in/joel-lara-luna" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/7?lang=eng&id=p7#p7"
+        target="_blank">Scripture</a>
+      <a href="#" target="_blank">Final Project</a>
     </nav>
-  
-    <main>
-    <!-- CARD #1 -->
-      <section class="card">
-        <h2>About Me</h2>
-        <p>
-            Hello! My name is Joel Lara Luna. I am a software development student from Mexico with a strong interest in artificial intelligence and problem-solving through technology. I enjoy exploring complex systems, identifying patterns, and integrating logical thinking with creativity. I’m particularly passionate about how software can be used to improve human potential and make information more accessible and efficient.
-        </p>
-        <img class="main-picture" src="images/joel-lara-luna.webp" width="200" alt="Joel Lara Luna">
-        <h3>Yucatan, Mexico</h2>
-        <p>
-            The Yucatán Peninsula is a region in southeastern Mexico known for its rich Mayan heritage, tropical climate, and stunning natural landscapes. It includes the states of Yucatán, Campeche, and Quintana Roo. The peninsula is home to ancient ruins like Chichén Itzá and beautiful cenotes, natural freshwater sinkholes found throughout the region.
-        </p>
-        <figure class="flag">
-            <img src="images/flag-of-mexico.svg.webp" width="200" alt="">
-            <figcaption>Official Flag of Mexico</figcaption>
-        </figure>
+    <!-- MAIN SECTION -->
+    <main class="grid-content">
 
+
+      <section class="card-1">
+        <h2>About Me</h2>
+        <div class="content">
+          <p>
+            Hello! My name is Joel Lara Luna. I am a software development student from Mexico with a strong interest in
+            artificial intelligence and problem-solving through technology. I enjoy exploring complex systems, identifying
+            patterns, and integrating logical thinking with creativity. I’m particularly passionate about how software can
+            be used to improve human potential and make information more accessible and efficient.
+          </p>
+          <img class="main-picture" src="images/joel-lara-luna.webp" width="200" alt="Joel Lara Luna">
+        </div>
       </section>
-    <!-- CARD #2 -->
-      <section class="card">
-        <h2>Web Dev Resources</h2>
-        <!-- contenido -->
-        <ul>
-            <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
-            <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
-            <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-            <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
-            <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
-            <li><a href="images/campeche-1.jpg" target="_blank">Image Placeholder</a></li>
-          </ul>          
+
+      <section class="card-2">
+        <h3>Yucatan, Mexico</h3>
+        <div class="content">
+          <figure class="flag">
+            <img src="images/flag-of-mexico.svg.webp" width="200" alt="Official Flag of Mexico">
+            <figcaption>Official Flag of Mexico</figcaption>
+          </figure>
+          <p>
+            The Yucatán Peninsula is a region in southeastern Mexico known for its rich Mayan heritage, tropical
+            climate, and stunning natural landscapes. It includes the states of Yucatán, Campeche, and Quintana Roo. The
+            peninsula is home to ancient ruins like Chichén Itzá and beautiful cenotes, natural freshwater sinkholes
+            found throughout the region.
+          </p>
+        </div>
       </section>
+
+
+
     </main>
-  
-    <footer>
+    <!-- ASIDE SECTION -->
+    <section class="grid-aside">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+        <li><a href="images/campeche-1.webp" target="_blank">Image Placeholder</a></li>
+      </ul>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer class="grid-footer">
       <p>© <span id="currentyear"></span> | Joel Lara Luna | Mexico</p>
       <p id="lastModified"></p>
     </footer>
-  </body>
-  
+</body>
+
 </html>

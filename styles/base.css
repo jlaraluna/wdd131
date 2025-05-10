@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -14,196 +15,190 @@
 }
 
 body {
+    background: var(--background-color);
     font-family: "Raleway", sans-serif;
     line-height: 27px;
     font-size: 16px;
-    background: var(--background-color);
-    display: grid;
-    /* STARTS GRID HERE */
-    grid-template-areas:
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* ENDS GRID HERE */
-    min-height: 100vh;
-    /* gap: 1rem; */
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 
-header {
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+.grid > * {
+    color: white;
+    font-size: 18px;
+}
+
+.grid-header {
+    grid-column: 1 / -1;
     background: var(--primary-color);
     font-family: "Playfair Display", serif;
     line-height: 1.5;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
-    grid-area: header;
     color: white;
-    padding: 40px;
-    
-    h1 {
-        border-bottom: 1px solid white;
-        display: inline-block;
-        padding-bottom: 5px; 
-        letter-spacing: 1.5px;
-    }
-
-    h2 {
-        font-weight: 500;
-        margin-top: 5px;
-        letter-spacing: 2px;
-    }
-
+    padding: 30px;
 }
 
-
-/* STARTS MENU NAVIGATION */
-
-nav {
-    background: #1a1a19;
-    grid-area: nav;
+.grid-header h1 {
+    border-bottom: 1px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+    letter-spacing: 1.5px;
 }
 
-.navigation {
-    color: white;
+.grid-navigation {
+    grid-column: 1 / -1;
+    background: var(--secondary-color);
     display: flex;
     justify-content: center;
     gap: 2rem;
-    list-style: none;
+    align-items: center;
+    height: 50px;
     padding: 1rem 0;
 }
 
-.navigation a {
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    letter-spacing: 1.4px;
+.grid-navigation a {
     color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.4px;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0.5rem 1rem;
     transition: background 0.3s;
 }
 
-.navigation a:hover {
+.grid-navigation a:hover {
     color: white;
     font-weight: 700;
     letter-spacing: 1px;
     border-bottom: 3px solid var(--button-color);
 }
 
-
-main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-
-.card {
+.grid-content {
+    grid-column: 1 / span 2;
+    margin: 20px;
+    border-radius: 10px;
     color: var(--secondary-color);
     background-color: #e6e6e5;
-    border-radius: 10px;
-    margin: 20px;
-    /* THIS CONTROLS THE CONTENT WHICH MIGHT GO OUTSIDE */
-    overflow: auto;
-
-    h2 {
-        color: white;
-        font-family: "Playfair Display", serif;
-        text-transform: uppercase;
-        font-size: 20px;
-        letter-spacing: 2.5px;
-        background: var(--primary-color);
-        text-align: center;
-        border-radius: 10px 10px 0px 0px;
-        padding: 20px;
-        margin: 0%;
-    }
-
-    h3 {
-        color: var(--primary-color);
-        font-family: "Playfair Display", serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 900;
-        width: 70%;
-        text-align: center;
-        padding-bottom: 5px;
-        border-bottom: 1px solid var(--primary-color);
-    }
-
-    /* STARTS FIRST CARD HERE */
-
-    P {
-        margin: 30px;
-    }
-
-    .main-picture {
-        float: right;
-        margin: 1rem;
-    }
-
-    .flag {
-        float: left;
-        margin: 1rem;
-        padding: 15px;
-
-        figcaption {
-            color: var(--secondary-color);
-            text-align: center;
-            font-family: "Montserrat", sans-serif;
-            font-size: 14px;
-            font-style: italic;
-            font-weight: 600;
-            margin-top: 5px;
-        }
-    }
-
-    /* STARTS SECOND CARD HERE */
-    ul {
-        /* list-style: none; */
-        margin: 40px 40px;
-        justify-content: center;
-        list-style-type: square;
-
-        li {
-            margin: 15px 0;
-        }
-
-    ::marker {
-        color: var(--button-color);
-    }
-
-        a {
-            font-weight: 500;
-            color: var(--button2-color);
-            
-            text-decoration: none;
-            border-bottom: 2px solid var(--button2-color);
-        }
-
-        a:hover {
-            font-weight: 700;
-            border-bottom: 2px solid var(--button-color);
-        }
-    }
 }
 
-/* STARTS FOOTER HERE */
-footer {
+.grid-content h2 {
+    color: white;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    background: var(--primary-color);
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    padding: 25px;
+    margin: 0;
+}
+
+.grid-content h3 {
+    text-align: center;
+}
+
+.grid-content .card-1,
+.grid-content .card-2 {
+    margin-bottom: 30px;
+}
+
+.grid-content .card-1 .content,
+.grid-content .card-2 .content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.grid-content .card-1 p {
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.grid-content .main-picture,
+.grid-content .flag {
+    max-width: 200px;
+}
+
+.grid-content p {
+    flex: 1;
+    padding: 0;
+}
+
+.grid-content .flag {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.grid-aside {
+    grid-column: 3 / 4;
+    background-color: #e6e6e5;
+    margin: 20px;
+    border-radius: 10px;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.grid-aside h2 {
+    color: white;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    background: var(--primary-color);
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+    margin: 0%;
+}
+
+.grid-aside ul {
+    margin: 40px 60px;
+    justify-content: center;
+    list-style-type: square;
+}
+
+.grid-aside ul li {
+    margin: 15px 0;
+}
+
+.grid-aside ul::marker {
+    color: var(--button-color);
+}
+
+.grid-aside ul a {
+    font-weight: 500;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.grid-aside ul a:hover {
+    font-weight: 700;
+    border-bottom: 2px solid var(--button-color);
+}
+
+.grid-footer {
+    grid-column: 1 / -1;
     background: var(--primary-color);
     color: white;
     font-family: "Montserrat", sans-serif;
-    
-    padding: 1.5rem;
+    padding: 10px;
     text-align: center;
-    grid-area: footer;
+}
 
-    p {
-        font-size: 14px;
-    }
+.grid-footer p {
+    font-size: 14px;
 }
