@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #102645;
+    --secondary-color: #000000;
+    --accent1-color: #979086;
+    --accent2-color: #b7ac9b;
+    --button-color: #d87d4a;
+    --button2-color: #5b88b2;
+    --background-color: #f2f2f2;
+}
+
+body {
+    background: var(--background-color);
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.title {
+    color: #fff;
+    background: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 25px;
+}
+.title2 {
+    margin: 15px;
+    font-size: 24px;
+}
+
+/* nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem 0;
+    background: #000;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 12px;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--button-color);
+} */
+
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--background-color);
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	background-color: var(--secondary-color);
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 1rem;
+    padding: 1rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: #5f1313; */
+    padding: 1rem;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    text-align: center;
+}
