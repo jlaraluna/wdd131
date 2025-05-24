@@ -55,12 +55,13 @@
     }
 
     .icon-container {
-        transition: 0.3s;
+        display: none;
     }
-
-    .icon-container:hover {
-        background: var(--button-color);
-        border-radius: 5px;
+    .icon-large::after {
+        content: "🌥️";
+        display: inline-block;
+        margin-left: 10px;
+        text-align: center;
     }
 
 
