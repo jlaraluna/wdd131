@@ -81,6 +81,11 @@ dd {
     margin-bottom: 1rem;
 }
 
+.icon-container:hover {
+    background: var(--button-color);
+    border-radius: 5px;
+}
+
 footer {
     background: var(--primary-color);
     color: #fff;
