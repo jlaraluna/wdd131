@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - Joel Lara Luna | Coutry Page"</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Joel Lara Luna | Temple Album">
+    <meta name="author" content="Joel Lara Luna">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <!-- =================== HEADER SECTION START =================== -->
+    <header>
+        <h1 class="title"> Portofino | <i>Italy</i></h1>
+    </header>
+    <!-- =================== HEADER SECTION END ===================== -->
+
+    <!-- =================== MAIN CONTENT START ====================== -->
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-mobile.webp" alt="Portofino" width="500" height="700">
+            </picture>
+        </div>
+        <div class="cards">
+            <section class="data">
+                <h2>Data</h2>
+                <dl>
+                    <dt>Area:</dt>
+                    <dd>2.5 sq km</dd>
+                    <dt>Population:</dt>
+                    <dd>416</dd>
+                    <dt>Region:</dt>
+                    <dd>Liguria</dd>
+                    <dt>Province:</dt>
+                    <dd>Genoa</dd>
+                    <dt>Languages:</dt>
+                    <dd>Italian</dd>
+                    <dt>Currency:</dt>
+                    <dd>Euro (€)</dd>
+                    <dt>Time Zone:</dt>
+                    <dd>UTC+1 (CET)</dd>
+                    <dt>Calling Code:</dt>
+                    <dd>+39</dd>
+                    <dt>Internet TLD:</dt>
+                    <dd>.it</dd>
+                </dl>
+            </section>
+            <section class="weather">
+                <div class="container">
+                    <h2>Weather</h2>
+                    <img class="icon-container" src="images/weather.svg" alt="Weather Icon">
+                </div>
+
+                <dl>
+                    <dt>Temperature:</dt>
+                    <dd>45 °F</dd>
+                    <dt>Conditions:</dt>
+                    <dd>Sunny</dd>
+                    <dt>Wind:</dt>
+                    <dd>10 mph</dd>
+                    <dt>Wind Chill:</dt>
+                    <dd id="windchillFactor"></dd>
+                </dl>
+            </section>
+        </div>
+
+    </main>
+    <!-- =================== MAIN CONTENT END ====================== -->
+
+    <!-- =================== FOOTER SECTION START ==================== -->
+    <footer class="grid-footer">
+        <p>© <span id="currentYear"></span> | Joel Lara Luna | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+    <!-- =================== FOOTER SECTION END ==================== -->
+</body>
+
+</html>
