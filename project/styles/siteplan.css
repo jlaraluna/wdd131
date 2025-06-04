@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors */
+    --color-primary-green: #2A3F32;
+    --color-secondary-orange: #A35C28;
+    --color-light-calcite: #f0ede9;
+
+    /* Accents Colors */
+    --color-orange-accent: #C6844C;
+
+    /* Typography and general background */
+    --color-text-dark: #041c20;
+    --color-background-default: #FFFFFF;
+}
+
+:root {
+    /* Typography */
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Crimson Text', serif;
+    --font-ui: 'Fira Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+}
+
+
+nav,
+button,
+label,
+small,
+input {
+    font-family: var(--font-ui);
+    text-align: center;
+}
+
+a {
+    color: var(--color-orange-accent);
+    text-decoration: none;
+    font-family: var(--font-ui);
+    padding: 2.5px;
+    font-size: 14px;
+}
+
+a:hover {
+    color: var(--color-background-default);
+    background: var(--color-secondary-orange);
+}
+
+
+header {
+    background: var(--color-primary-green);
+    color: var(--color-background-default);
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header p {
+    color: var(--color-orange-accent);
+    font-family: var(--font-ui);
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--color-light-calcite);
+    color: var(--color-text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+main section {
+    margin: 0.75rem 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+footer {
+    background: var(--color-primary-green);
+    color: var(--color-background-default);
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin-bottom: 2px;
+}
