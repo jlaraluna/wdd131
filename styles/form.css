@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #153057;
+    --secondary-color: #efefef;
+    --accent-gold: #d4af37;
+}
+
+
+body {
+    font-family: "Raleway", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+header {
+    color: #fff;
+    background: var(--primary-color);
+    
+}
+
+header h1 {
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 27px;
+}
+
+main {
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    max-width: 400px;
+}
+
+.form fieldset {
+    margin: 1rem auto;
+    border: 1px solid #ddd;
+    background: var(--secondary-color);
+    border-radius: 5px;
+    padding: .75rem;
+    width: 96%;
+    max-width: 400px;
+}
+
+
+.form label {
+    font-weight: 700;
+    display: block;
+    padding-top: 1rem;
+    font-size: 16px;
+}
+
+.form div {
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.features {
+    margin-top: 1rem;
+}
+
+.form input[type="date"],
+.form input[type="textarea"],
+.form input[type="text"],
+.form select {
+    border: 1px solid #fff;
+    background: #fff;
+    display: block;
+    margin-top: 5px;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    font-family: "Raleway", sans-serif;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+.form input[type="submit"]{
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    padding: .75rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1.2rem 2% 1.2rem 2%;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #1c3f73;
+}
+
+
+
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+    margin-top: -10px;
+}
+
+.stars > label {
+	color: var(--accent-gold);
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+.optional {
+  font-style: italic;
+  font-weight: normal;
+  color: #393939;
+  font-size: 0.9em;
+}
+
+footer {
+    color: #fff;
+    background: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
