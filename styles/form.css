@@ -160,6 +160,23 @@ input[type="radio"] {
   font-size: 0.9em;
 }
 
+main.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 600px;
+}
+
+.container {
+  padding: 1rem;
+}
+
 footer {
     color: #fff;
     background: var(--primary-color);

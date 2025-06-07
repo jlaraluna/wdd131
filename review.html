@@ -2,15 +2,49 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Review Submitted</title>
-        <script src="scripts/form.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            WDD 131 – Dynamic Web Fundamentals - Joel Lara Luna | Review
+            Submitted"
+        </title>
+        <meta
+            name="description"
+            content="WDD 131 – Dynamic Web Fundamentals | Joel Lara Luna | Review Submitted"
+        />
+        <meta name="author" content="Joel Lara Luna" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/form.css" />
     </head>
     <body>
-        <h1>Thank you for your review!</h1>
-        <p>You have submitted <span id="review-count">0</span> review(s).</p>
-        <p>
-            <span class="label">Number of Visits: </span
-            ><span class="visits"></span>
-        </p>
+        <main class="submit">
+            <div class="container">
+                <h1>Thanks for your submit!</h1>
+                <p>
+                    <span class="label">Number of Submits: </span
+                    ><span class="visits"></span>
+                </p>
+            </div>
+        </main>
+        <script>
+            const visitsDisplay = document.querySelector(".visits");
+
+            let numVisits =
+                Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+            if (numVisits !== 0) {
+                visitsDisplay.textContent = numVisits;
+            } else {
+                visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+            }
+
+            numVisits++;
+
+            localStorage.setItem("numVisits-ls", numVisits);
+        </script>
     </body>
 </html>
