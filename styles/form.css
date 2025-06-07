@@ -75,10 +75,27 @@ form {
     margin-top: 1rem;
 }
 
+.features i {
+  font-weight: normal;
+  font-style: italic;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+}
+
 .form input[type="date"],
-.form input[type="textarea"],
 .form input[type="text"],
-.form select {
+.form select,
+.form textarea {
     border: 1px solid #fff;
     background: #fff;
     display: block;
