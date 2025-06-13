@@ -58,7 +58,7 @@ a {
 
 button {
     color: var(--color-light-calcite);
-    background: var(--color-secondary-orange);
+    background: var(--color-text-dark);
     padding: 8px;
     border-style: none;
     font-size: 16px;
@@ -68,9 +68,9 @@ button {
 }
 
 button:hover {
-    color: var(--color-secondary-orange);
+    color: var(--color-text-dark);
     background-color: var(--color-light-calcite);
-    border: 3px solid var(--color-secondary-orange);
+    border: 3px solid var(--color-text-dark);
     font-weight: bold;
 }
 
@@ -179,7 +179,7 @@ button:hover {
 
 .card-2 {
     color: var(--color-background-default);
-    background: var(--color-text-dark);
+    background: var(--color-secondary-orange);
     margin-bottom: 10px;
 }
 
