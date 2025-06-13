@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home | Calakmul Sanctuary</title>
+        <meta
+            name="description"
+            content="Home – Welcome to the site of the Calakmul Biosphere Reserve, here you will discover the history and the relevance of our Reserve, which is considered as the Lung of Mexico that provides oxygen | Calakmul Sanctuary"
+        />
+        <meta name="author" content="Joel Lara Luna" />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header style="position: relative;">
+            <div class="header">
+                <h1>Calakmul Sanctuary</h1>
+                <p class="subheader">The soul of the Mayan jungle</p>
+            </div>
+            <button type="button" id="menu"></button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="experiences.html" title="Experiences">Experiences</a></li>
+                    <li><a href="bookings.html" title="Bookings">Bookings</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/hero-image.webp" />
+                    <img src="images/hero-mobile.webp" alt="Calakmul" width="720" height="1080" />
+                </picture>
+            </div>
+            <!-- ===== Site Name Section ===== -->
+            <section class="site-name">
+                <p class="main-title"><strong>Calakmul Sanctuary</strong></p>
+                <p class="subtitle">A <b>UNESCO</b> World Heritage Site nestled in the lush jungle of Campeche, Mexico.</p>
+                <p>
+                    Welcome to the <b><em>Calakmul Sanctuary</em></b> a place where sacred heritage meets ecological wonder. <br />
+                    Calakmul is a sanctuary that preserves the jungle’s biodiversity and the legacy of the ancient Mayan civilization. As part of the
+                    Biosphere Reserve, it invites responsible tourism through cultural, environmental, and historical awareness—deepening your
+                    connection with the land and its stories.
+                </p>
+            </section>
+            <div>
+                <p class="line"></p>
+            </div>
+            <!-- ===== Scenarios Section ===== -->
+            <section class="scenarios">
+                <div class="card-1">
+                    <div class="info-container">
+                        <h3>
+                            <strong>What can I expect to see and experience when visiting Calakmul?</strong>
+                        </h3>
+                        <p>Visitors want to know about wildlife, landscapes, historical ruins, and local culture before planning their trip.</p>
+                        <button onclick="window.location.href='bookings.html'">BOOKING</button>
+                    </div>
+                    <figure>
+                        <img src="images/image-1.webp" alt="Jaguar in the jungle" />
+                    </figure>
+                </div>
+
+                <div class="card-2">
+                    <div class="info-container-2">
+                        <h3>
+                            <strong>How can I prepare for a responsible and environmentally conscious visit?</strong>
+                        </h3>
+                        <p>
+                            Many users seek guidance on eco-friendly travel practices, rules of preservation, and respectful interaction with nature
+                            and heritage sites.
+                        </p>
+                        <button onclick="window.location.href='bookings.html'">BOOKING</button>
+                    </div>
+                    <figure>
+                        <img src="images/image-2.webp" alt="Tourist in the top of the pyramid" />
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <!-- =================== MAIN CONTENT END ======================== -->
+        <footer>
+            <p><span id="currentYear"></span> | Joel Lara Luna | ® All Rights Reserved</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/main.js" defer></script>
+    </body>
+</html>

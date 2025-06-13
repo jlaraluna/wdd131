@@ -35,40 +35,6 @@ h1 {
     font-size: 24px;
 }
 
-/* nav {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;
-    padding: 1rem 0;
-    background: #000;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    width: 100%;
-}
-
-nav a {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    /* font-size: 12px;
-    letter-spacing: 1.4px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: background 0.3s;
-    border-bottom: 3px solid transparent;
-}
-
-nav a:hover {
-    color: white;
-    font-weight: 700;
-    letter-spacing: 1px;
-    border-bottom: 3px solid var(--button-color);
-} */
-
-
 #menu {
 	font-size: 1.5rem;
 	border: 0;
