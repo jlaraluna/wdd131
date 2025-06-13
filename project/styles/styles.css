@@ -91,9 +91,6 @@ button:hover {
 }
 
 /* -------- NAVIGATION --------  */
-.btn {
-    display: none;
-}
 
 .navigation {
     background: var(--color-text-dark);
@@ -532,6 +529,7 @@ legend {
         max-width: 100%;
         height: 100%;
         object-fit: cover;
+        margin-bottom: 0;
     }
 
     /* ------ EXPERIENCES ------ */
@@ -569,12 +567,73 @@ legend {
         gap: 5px;
     }
     .experiences-menu .grid .previews {
-        height: 800px;
+        height: 400px;
+    }
+
+    .experiences-menu .grid .tabs .tab .icono {
+        padding-left: 0;
     }
 
     .icono svg {
         display: none;
+
     }
+
+    /* ------ HAMBURGUER MENU------ */
+
+    #menu {
+    display: block;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--color-text-dark);
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  #menu::before {
+    content: "☰";
+    display: block;
+    color: var(--color-background-default);
+  }
+
+  #menu.open::before {
+    content: "✖";
+    color: var(--color-background-default);
+  }
+
+  .navigation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-text-dark);
+    flex-direction: column;
+    display: none;
+    z-index: 999;
+    gap: 0;
+    padding: 1rem 0;
+  }
+
+  .navigation.open {
+    display: flex;
+  }
+
+  .navigation a {
+    color: var(--color-secondary-orange);
+    padding: 0.5rem;
+    text-align: center;
+    display: block;
+    border-bottom: 2px solid transparent;
+  }
+
+  .navigation li a:hover {
+    border: none;
+    color: var(--color-background-default);
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -586,64 +645,5 @@ legend {
   }
 }
 
-
-@media screen and (max-width: 768px) {
-  .navigation {
-    display: none;
-    flex-direction: column;
-    background-color: var(--color-text-dark);
-    padding: 1.5rem 0;
-    text-align: center;
-
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    z-index: 999;
-  }
-
-  .navigation li a {
-  display: block;
-  width: 125px;
-  padding: 0.25rem;
-  border-bottom: 1px solid white;
-  /* border-top: 1px solid white; */
-  color: var(--color-secondary-orange);
-  text-decoration: none;
-  margin: 0 auto;
-  font-size: 18px;
-}
-
-  .navigation a:hover {
-    display: none;
-    }
-
-
-  .navigation.open {
-    display: flex;
-  }
-
-  #menu {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: 0;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-
-  #menu::before {
-    content: "☰";
-    display: block;
-    color: #fff;
-  }
-
-  #menu.open::before {
-    content: "✕";
-    color: #fff;
-  }
-}
 
 
