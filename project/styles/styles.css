@@ -61,16 +61,17 @@ button {
     background: var(--color-secondary-orange);
     padding: 8px;
     border-style: none;
-    font-size: 0.80em;
+    font-size: 16px;
+    font-weight: 500;
     font-family: var(--font-ui);
-    border: 2px solid transparent;
+    border: 3px solid transparent;
 }
 
 button:hover {
     color: var(--color-secondary-orange);
     background-color: var(--color-light-calcite);
-    border: 2px solid var(--color-secondary-orange);
-    font-weight: 600;
+    border: 3px solid var(--color-secondary-orange);
+    font-weight: bold;
 }
 
 /* ---------------- LAYOUT ----------------  */
@@ -86,7 +87,7 @@ button:hover {
 }
 
 .subheader {
-    color: var(--color-orange-accent);
+    color: var(--color-light-calcite);
     font-family: var(--font-ui);
 }
 
